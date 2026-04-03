@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface": "#1b1c1a",
+              "on-primary-container": "#4b3807",
+              "error-container": "#ffdad6",
+              "primary-container": "#bea268",
+              "secondary-container": "#f1ddbb",
+              "surface": "#fbf9f5",
+              "inverse-on-surface": "#f2f0ed",
+              "surface-container-highest": "#e4e2de",
+              "surface-bright": "#fbf9f5",
+              "on-secondary": "#ffffff",
+              "tertiary": "#685d47",
+              "surface-dim": "#dbdad6",
+              "on-surface-variant": "#4e4639",
+              "surface-container-low": "#f5f3ef",
+              "on-tertiary-container": "#443a27",
+              "on-tertiary-fixed": "#221b09",
+              "primary-fixed-dim": "#e1c385",
+              "surface-container-high": "#eae8e4",
+              "on-secondary-fixed-variant": "#52452c",
+              "secondary-fixed": "#f4e0be",
+              "on-tertiary": "#ffffff",
+              "primary-fixed": "#fedf9f",
+              "background": "#fbf9f5",
+              "on-error": "#ffffff",
+              "surface-tint": "#725b28",
+              "on-secondary-container": "#6f6145",
+              "tertiary-fixed-dim": "#d4c5aa",
+              "on-error-container": "#93000a",
+              "inverse-surface": "#30312e",
+              "outline-variant": "#d1c5b4",
+              "outline": "#7f7667",
+              "tertiary-fixed": "#f1e1c5",
+              "secondary": "#6b5d42",
+              "on-tertiary-fixed-variant": "#504631",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-fixed": "#241a05",
+              "inverse-primary": "#e1c385",
+              "surface-container": "#efeeea",
+              "on-background": "#1b1c1a",
+              "error": "#ba1a1a",
+              "on-primary-fixed-variant": "#584413",
+              "on-primary-fixed": "#251a00",
+              "secondary-fixed-dim": "#d7c4a3",
+              "primary": "#725b28",
+              "surface-variant": "#e4e2de",
+              "on-primary": "#ffffff",
+              "tertiary-container": "#b2a48b"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(114, 91, 40, 0.1) 0%, rgba(190, 162, 104, 0.05) 100%);
+        }
+        .gold-shimmer {
+            background: linear-gradient(135deg, #725b28 0%, #bea268 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbf9f5]/80 backdrop-blur-xl shadow-[0px_20px_40px_rgba(114,91,40,0.04)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-12">
+<span class="text-2xl font-bold tracking-tighter text-[#1b1c1a] font-headline">NAZEE’S</span>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Noto_Serif'] font-light tracking-wide text-[#725b28] border-b border-[#725b28] pb-1" href="#">Collections</a>
+<a class="font-['Noto_Serif'] font-light tracking-wide text-[#7f7667] hover:text-[#1b1c1a] transition-colors" href="#">New Arrivals</a>
+<a class="font-['Noto_Serif'] font-light tracking-wide text-[#7f7667] hover:text-[#1b1c1a] transition-colors" href="#">Lookbook</a>
+<a class="font-['Noto_Serif'] font-light tracking-wide text-[#7f7667] hover:text-[#1b1c1a] transition-colors" href="#">Journal</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex items-center border-b border-outline-variant/30 pb-1">
+<span class="material-symbols-outlined text-outline text-sm">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm py-0 w-32 placeholder:text-outline/50" placeholder="Search" type="text"/>
+</div>
+<div class="flex gap-4">
+<button class="text-[#725b28] hover:opacity-80 transition-opacity duration-300 scale-95 duration-200 ease-in-out">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+<button class="text-[#725b28] hover:opacity-80 transition-opacity duration-300 scale-95 duration-200 ease-in-out relative">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+<span class="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-[10px] text-on-primary font-bold">2</span>
+</button>
+<button class="md:hidden text-[#725b28]">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+</div>
+<div class="bg-[#efeeea] h-[1px] opacity-10"></div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[921px] overflow-hidden flex items-center">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover object-center grayscale-[20%]" data-alt="Fashion model in a high-end beige trench coat standing against a minimalist architecture wall with soft morning sunlight casting elegant shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMjMT0rngXnJSxBeLgSpCImswodXDuL0WGc_2u9i6n0IZj87tXQbTTiV1ZF_8TiwqYQRe0VoYD6r2q-NujH3b6UkNCL2wP6fa8xj-5jFjfdeUxGc6L-kmSAtgCvD3_6-c5EYhgBnL5wR_6k96PPOYBSbg2Jko2j-U8HWqA6Dra1f10qIoZfeo5IZuZEzEDDaSjwwS1K7_xOEF6r_EivjMyxN9rXlSRWm4rmSGqetG2OKdnh8FtARolFIsG7NUSjljt2IW6pDjm95Wx"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface/40 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-12 w-full">
+<div class="max-w-xl">
+<p class="font-label text-sm tracking-[0.3em] text-primary mb-6 uppercase">The Spring Series</p>
+<h1 class="font-headline text-7xl md:text-8xl font-light text-on-surface leading-[1.1] mb-8">
+                        Style that <br/><span class="italic">defines</span> you
+                    </h1>
+<div class="flex gap-6 items-center">
+<a class="gold-shimmer px-10 py-4 rounded-none text-on-primary font-label text-sm uppercase tracking-widest hover:opacity-90 transition-all shadow-lg shadow-primary/10" href="#">
+                            Shop Collection
+                        </a>
+<a class="group flex items-center gap-3 font-label text-sm uppercase tracking-widest text-on-surface hover:text-primary transition-colors" href="#">
+                            View Lookbook
+                            <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Collections - Intentional Asymmetry -->
+<section class="py-32 px-12 max-w-7xl mx-auto">
+<div class="grid grid-cols-12 gap-8 items-stretch">
+<!-- Women's Collection -->
+<div class="col-span-12 md:col-span-7 group relative overflow-hidden aspect-[4/5] bg-surface-container-low">
+<img class="w-full h-full object-cover grayscale-[10%] group-hover:scale-105 transition-transform duration-700" data-alt="Editorial portrait of a woman in luxury silk dress with golden jewelry, warm studio lighting, elegant and sophisticated mood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6UiRyoN0JcMq1MnGZM2srfK9J_T9JRdcFpAr2w4bjK_lyQIaDtB6GNhuUbMjzkMPFMr2AF32TmDixMXAAFzmYxshpgfg6t8a737VWzRIxyvReIiouw_Ncn7mzZga0K_WSMibzJhqUu15HOpc5bNoQdgWGlzY9cjNi7lwFE8EjTb_thhdEZT19uvfeUuLIWhQxh7lr65C74G-NzCoPpzH3etnGVwfLcfqtPWu63nLUxgadTeWn889H1p5Pjr3a4wQgojilgZe_qwJV"/>
+<div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors"></div>
+<div class="absolute bottom-12 left-12">
+<h2 class="font-headline text-5xl text-white mb-4">Women</h2>
+<a class="inline-block text-white font-label text-xs uppercase tracking-widest border-b border-white/40 pb-1 hover:border-white transition-all" href="#">Explore Category</a>
+</div>
+</div>
+<!-- Men's & New Arrivals Column -->
+<div class="col-span-12 md:col-span-5 flex flex-col gap-8">
+<div class="flex-1 group relative overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Man in tailored linen shirt looking away, soft natural lighting, high-end editorial fashion aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpuKY1dfMdRuSeLyYhMulQNRsJ8rQg-Rvnm_RXS0TTmllI1y_kWHJ0UU1WzgrT4DPWoEqrGsDS3wiuNEW6wyz8mHZVg0vN4kq_q78c_qiOslaSgvAQQ8MF8QT79p8vTG1ewRhfMAbPZGt1LuVovBdEGgLrAYJmRoOa7H4oAWNRF8z8PjeI-WFN_16zhNsh_rPV2Zx3LyCHQfuetp-doP5sSoctwoIRkYrPH8xVNsh8AGir1VUCozrU_d1aE0ScPo5ik1vN6ZrcO-Ml"/>
+<div class="absolute inset-0 bg-black/5"></div>
+<div class="absolute bottom-8 left-8">
+<h2 class="font-headline text-3xl text-white mb-2">Men</h2>
+<a class="inline-block text-white font-label text-xs uppercase tracking-widest border-b border-white/40 pb-1" href="#">Discover</a>
+</div>
+</div>
+<div class="flex-1 group relative overflow-hidden bg-primary/5">
+<div class="p-12 h-full flex flex-col justify-center items-center text-center">
+<h2 class="font-headline text-4xl text-on-surface mb-6">New Arrivals</h2>
+<p class="font-body text-outline mb-8 max-w-[240px]">Fresh silhouettes and seasonal textures arriving weekly.</p>
+<a class="w-16 h-16 rounded-full border border-primary/20 flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-all" href="#">
+<span class="material-symbols-outlined text-primary group-hover:text-white transition-colors">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Best Sellers - Product Grid -->
+<section class="bg-surface-container-low py-32 px-12">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="font-label text-xs tracking-widest text-primary uppercase">Top Picks</span>
+<h2 class="font-headline text-5xl mt-4">Best Sellers</h2>
+</div>
+<a class="text-on-surface font-label text-xs uppercase tracking-widest border-b border-outline-variant pb-1" href="#">Shop All</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
+<!-- Product 1 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden bg-white mb-6">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="Beige cashmere coat on a hanger with soft daylight, minimalist and premium presentation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcTsHoND4FnL9HMyL9La9b-UqKtEofJ02iicLoFwh0Qgq7ezg4x7G24hGe2FRi3FbjQZajuxQDezoS2qkYBjot7gsvbmR-O7aZ7DdOPdulBBhbi4LGSekRD6Jgr2LNa3AbnotHeYo4-98zOpqx8JxbexLlJx6RtUTzXLmkAUdyGnUHmwRyjYaYx62uD6wdM7vjoVvAeGpjctTBLCpRMHO3CmrcTBj-sewVDRyZf9NWNrryr9QHNHkZ2g1fk4ubAmy4tWL_Ur6ALN4L"/>
+<div class="absolute top-4 right-4 flex flex-col gap-2">
+<button class="w-10 h-10 bg-white/90 backdrop-blur-md rounded-full flex items-center justify-center text-on-surface hover:text-primary transition-colors shadow-sm">
+<span class="material-symbols-outlined text-lg">favorite</span>
+</button>
+</div>
+<div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-500 bg-white/80 backdrop-blur-md">
+<button class="w-full text-center font-label text-xs uppercase tracking-widest py-2 hover:text-primary">Quick Add</button>
+</div>
+</div>
+<h3 class="font-body text-lg text-on-surface">Minimalist Wool Coat</h3>
+<p class="font-body text-outline mt-1">$450.00</p>
+</div>
+<!-- Product 2 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden bg-white mb-6">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="Luxury cream sweater folded on a marble table with a sprig of dried lavender" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4r2w9eoILAk_oeaNL7cxPn1MAuj1mcty-GqGpRo5f3c0KoP8jQkjESb1gzFvWb5Y3kDM45DFxl2ND5w6YUfa8F4q-7PEBHq2cnM1E0rM47ZYkXJScYAzVueFcxjSTl5x3IAcqWpUdaMguWOSlSJfp0uzfPXVzs8zufwM-405uEhFEJU_0Zdyr_4povB1H72OxiLmLDRf54kS8DX4BxxzWRsQqQ4GV8MNpucP8zYw22VbmCZd40zS10pC1oPuK7vfVA7bTvwtMuZiA"/>
+<div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-500 bg-white/80 backdrop-blur-md">
+<button class="w-full text-center font-label text-xs uppercase tracking-widest py-2 hover:text-primary">Quick Add</button>
+</div>
+</div>
+<h3 class="font-body text-lg text-on-surface">Cashmere Crewneck</h3>
+<p class="font-body text-outline mt-1">$280.00</p>
+</div>
+<!-- Product 3 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden bg-white mb-6">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="High-end white poplin shirt flat lay on a warm wood surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3L4vYKvqbeCMNfi3QaZWoh6n99P36u7Mf2kXGT98nSoVFt4GKUWDztyF-wfCiy2H-hbmB-lDpwm_9iyuxHZH6e1F8vA_uP4Kf_n3b5oYYMu5zmadh4-nTMdnxv33T-c4xqXtZV-8wEZ9pJ66jt2ICYiQjm8VtnO7QVNOAp5OQXSM9iYG-IxAITBYRbWtD2M7WTCh-wmYwtau6nFjTn0SK1cseM5EcSiKhQSHBYEjnv1VzZgy5z8JTtmRT7ucSgiRqyErwcHFE2Xt7"/>
+<div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-500 bg-white/80 backdrop-blur-md">
+<button class="w-full text-center font-label text-xs uppercase tracking-widest py-2 hover:text-primary">Quick Add</button>
+</div>
+</div>
+<h3 class="font-body text-lg text-on-surface">Structured Poplin Shirt</h3>
+<p class="font-body text-outline mt-1">$145.00</p>
+</div>
+<!-- Product 4 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden bg-white mb-6">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="Dark leather jacket hanging in a boutique setting with ambient warm spotlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgvmviCEoyisZ4Yrqf-2IZCl7WYkUXi7pEd4FiUwbsKb-zlzAmgNDm9WFfzKz9kPtfYUe7t-HBxbbW0HPNO163nl3RRd8z22kFZZDrNYuNfWO5GyWHZP3YsdxHKQ4qAF4uRxyE4vxCOiyfLa1LQ5_v42YdZ2LyjUxfskNpfW0BWi2pyHnXBELunzqFlxl3kDYcSws3Ag-3KZvoe67ifGQb9phS3UeHtlbhvMSa5KZ-9Ug-I-OcWXJ89LF2-EdCJyoATDanvx5eVlkJ"/>
+<div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-500 bg-white/80 backdrop-blur-md">
+<button class="w-full text-center font-label text-xs uppercase tracking-widest py-2 hover:text-primary">Quick Add</button>
+</div>
+</div>
+<h3 class="font-body text-lg text-on-surface">Heritage Leather Jacket</h3>
+<p class="font-body text-outline mt-1">$890.00</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Promotional Banner -->
+<section class="py-20 px-12">
+<div class="max-w-7xl mx-auto gold-shimmer p-1 text-center">
+<div class="bg-surface py-20 px-12">
+<span class="font-label text-xs tracking-widest text-primary uppercase mb-6 block">Limited Opportunity</span>
+<h2 class="font-headline text-5xl md:text-6xl mb-8 text-on-surface">Privé Seasonal Event</h2>
+<p class="font-body text-outline text-lg mb-12 max-w-2xl mx-auto italic">Enjoy complimentary express shipping and a curated gifting set on all orders above $500. For a limited time only.</p>
+<a class="inline-block border border-primary text-primary px-12 py-4 font-label text-sm uppercase tracking-widest hover:bg-primary hover:text-white transition-all" href="#">Claim Offer</a>
+</div>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="py-32 bg-surface-container">
+<div class="max-w-3xl mx-auto px-8 text-center">
+<h3 class="font-headline text-4xl mb-4">Join The Atelier</h3>
+<p class="font-body text-outline mb-12">Subscribe to receive private invitations to new collection previews, editorial journals, and seasonal events.</p>
+<form class="flex flex-col md:flex-row gap-4">
+<div class="flex-1 relative">
+<input class="w-full bg-transparent border-none border-b border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 font-body text-on-surface placeholder:text-outline/40" placeholder="Your Email Address" type="email"/>
+</div>
+<button class="bg-on-surface text-surface font-label text-xs uppercase tracking-[0.2em] px-10 py-4 hover:opacity-90 transition-opacity" type="submit">Subscribe</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#efeeea] w-full py-16 px-12 mt-20 border-t border-[#d1c5b4]/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<span class="text-lg font-semibold text-[#1b1c1a] font-headline mb-6 block">NAZEE’S</span>
+<p class="text-[#7f7667] text-sm leading-relaxed max-w-[200px]">Curating the modern silhouette through intentional design and exceptional materials.</p>
+</div>
+<div>
+<h4 class="font-['Manrope'] text-sm uppercase tracking-widest text-[#725b28] font-bold mb-6">Shopping</h4>
+<ul class="flex flex-col gap-4">
+<li><a class="text-[#7f7667] font-['Manrope'] text-sm uppercase tracking-widest hover:text-[#725b28] transition-all" href="#">Collections</a></li>
+<li><a class="text-[#7f7667] font-['Manrope'] text-sm uppercase tracking-widest hover:text-[#725b28] transition-all" href="#">New Arrivals</a></li>
+<li><a class="text-[#7f7667] font-['Manrope'] text-sm uppercase tracking-widest hover:text-[#725b28] transition-all" href="#">Journal</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-['Manrope'] text-sm uppercase tracking-widest text-[#725b28] font-bold mb-6">Customer Care</h4>
+<ul class="flex flex-col gap-4">
+<li><a class="text-[#7f7667] font-['Manrope'] text-sm uppercase tracking-widest hover:text-[#725b28] transition-all" href="#">Shipping &amp; Returns</a></li>
+<li><a class="text-[#7f7667] font-['Manrope'] text-sm uppercase tracking-widest hover:text-[#725b28] transition-all" href="#">Customer Service</a></li>
+<li><a class="text-[#7f7667] font-['Manrope'] text-sm uppercase tracking-widest hover:text-[#725b28] transition-all" href="#">Newsletter Signup</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-['Manrope'] text-sm uppercase tracking-widest text-[#725b28] font-bold mb-6">Follow</h4>
+<ul class="flex flex-col gap-4">
+<li><a class="text-[#7f7667] font-['Manrope'] text-sm uppercase tracking-widest hover:text-[#725b28] transition-all" href="#">Instagram</a></li>
+<li><a class="text-[#7f7667] font-['Manrope'] text-sm uppercase tracking-widest hover:text-[#725b28] transition-all" href="#">Facebook</a></li>
+<li><a class="text-[#7f7667] font-['Manrope'] text-sm uppercase tracking-widest hover:text-[#725b28] transition-all" href="#">Pinterest</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-16 mt-16 border-t border-outline-variant/10 text-center">
+<p class="text-[#7f7667] font-['Manrope'] text-[10px] uppercase tracking-widest">© 2024 Nazee’s Clothing Store. All rights reserved.</p>
+</div>
+</footer>
+</body></html>
